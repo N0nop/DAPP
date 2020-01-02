@@ -19,7 +19,7 @@ const { SubMenu } = Menu;
 const onChange = e => {
     console.log(e);
 };
-const CONTRACT = "0xBa9e57F53414F3B61AB8da64b574CFeE6308818D";
+const CONTRACT = "0xD1D8494820A809F94Def324FEF631Ca2bBB37345";
 
 
 class SiderDemo extends Component {
