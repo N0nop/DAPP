@@ -39,6 +39,32 @@ truffle开发框架进行开发的后端进行绑定，部署项目相关的智�
 的时候有体现，但是测试代码在整理后删除了）。测试代码通过truffle test操作验证了合约的正确性和安全性。
 
 # 运行截图
+- 需要绑定matemask账户
+![avatar](./assets/start.png)
+- MyNotes主页界面（之前添加过一条note记录）：
+![avatar](./assets/MyNotes.png)
+- NewNote界面(已经填写了内容，但是初始界面是空的）：
+![avatar](./assets/new_beforeClick.png)
+- NewNote界面（点击提交后）：
+![avatar](./assets/new_afterClick_1.png)
+- MyNotes主页界面（提交完后自动跳转）：
+![avatar](./assets/new_afterClick_2.png)
+- EditNote界面(文本框开始都是空的，这里需要先输入note标题搜索要更改note内容，内容会自动出现在文本框中；否则直接修改会报错）：
+![avatar](./assets/edit_afterSearchDone.png)
+- EditNote界面（报错）：
+![avatar](./assets/edit_error.png)
+- EditNote界面（修改完标题以及内容后，但尚未提交）
+![avatar](./assets/edit_beforeClick.png)
+- EditNote界面（提交之后）：
+![avatar](./assets/edit_afterClick_1.png)
+- MyNotes界面（Edit结束后自动跳转）：
+![avatar](./assets/edit_afterClick_2.png)
+- FindNote界面（输入搜索地址之前）：
+![avatar](./assets/find_beforeClick.png)
+- FindNote界面（输入合法地址之后并点击Serach按钮，若地址尚未有笔记或地址非法则结果均为空）：
+![avatar](./assets/find_afterClick.png)
+- FindNote界面（结果为空）：
+![avatar](./assets/find_blank.png)
 
 # 成员以及贡献占比
 - 雷骁(50%) ==> 后端设计和测试以及协助前端设计（由于后端设计较为简单）
