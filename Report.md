@@ -5,7 +5,7 @@
 用户之间的笔记共享。
 
 # 开发环境
-1. 区块链环境:Ganache提供的区块链模拟器
+1. 区块链环境：Ganache提供的区块链模拟器
 2. 前端设计：采用Javascript库React进行设计
 3. 后段设计：采用truffle开发框架进行设计
 
@@ -412,7 +412,7 @@ Func_SearchOtherNote = async (account) => {
 ```
 
 ## 后端设计
-### 储存合约 <b>NoteStorage.sol</b>
+### 1. 储存合约 <b>NoteStorage.sol</b>
 储存笔记，以及权限记录
 ```solidity
 // Owner of the notes
@@ -468,7 +468,7 @@ function GetLength(address _address) public view returns(uint256)
     return Notes[_address].length;
 }
 ```
-### 逻辑合约 <b>NoteLogic.sol</b>
+### 2. 逻辑合约 <b>NoteLogic.sol</b>
 储存合约的实例，用于和储存合约的交互
 ```solidity
 NoteStorage noteStorage;
@@ -514,7 +514,7 @@ function Length(address _address) public view returns (uint256)
     return noteStorage.GetLength(_address);
 }
 ```
-### 合约测试
+### 3. 合约测试
 <b>TestNoteStorage.sol</b>
 ```solidity
 pragma solidity >= 0.4.21 < 0.7.0;
@@ -571,7 +571,6 @@ contract TestNoteStorage
     }
 }
 ```
-
 <b>TestNoteLogic.sol</b>
 ```solidity
 pragma solidity >= 0.4.21 < 0.7.0;
